@@ -19,4 +19,4 @@ $python pessoa.py
 - [StackEdit](https://stackedit.io/) - Para Editar o README.md.
 - [Markdown Editor](https://jbt.github.io/markdown-editor/) - Para Editar o README.md.
 
-Enjoy it :+1:
+Enjoy it :+1::skin-tone-5:
