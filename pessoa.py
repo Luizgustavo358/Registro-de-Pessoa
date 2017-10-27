@@ -77,10 +77,10 @@ def add_idade():
 
 ''' Método para adicionar emprego da pessoa. '''
 def add_emprego():
-    tem = input("Já está empregado? (s/n) ")
+    tem = input("Já está empregado? (S/n) ")
 
     # comparacao
-    if tem == 's' or tem == 'S':
+    if tem == 's' or tem == 'S' or tem == '':
         emprego_da_pessoa = input("Em qual emprego? ")
         return emprego_da_pessoa
     else:
@@ -115,8 +115,8 @@ if __name__ == '__main__':
     apresentacao()
 
     # adicionando dados da pessoa
-    nome = add_nome()
-    idade = add_idade()
+    nome    = add_nome()
+    idade   = add_idade()
     emprego = add_emprego()
     p = Pessoa(nome, idade, emprego)
 
@@ -141,7 +141,7 @@ if __name__ == '__main__':
     # end if
 
     while n != 0:
-        print("O que deseja fazer?")
+        print("\nO que deseja fazer?")
         print("0 - Sair")
         print("1 - Alterar idade")
         print("2 - Alterar emprego")
@@ -152,7 +152,7 @@ if __name__ == '__main__':
 
         # comparando a opcao escolhida
         if n == 0:
-            print("\nVocê saiu.")
+            print("\nVocê saiu.\n")
         elif n == 1:
             alterar_idade()
         elif n == 2:
